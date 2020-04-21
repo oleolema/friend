@@ -1,0 +1,22 @@
+export default {
+  'useranduserregisteranduserregisterresult.login.userName': '賬戶',
+  'useranduserregisteranduserregisterresult.login.password': '密碼',
+  'useranduserregisteranduserregisterresult.login.message-invalid-credentials': '賬戶或密碼錯誤（admin/ant.design）',
+  'useranduserregisteranduserregisterresult.login.message-invalid-verification-code': '驗證碼錯誤',
+  'useranduserregisteranduserregisterresult.login.tab-login-credentials': '賬戶密碼登錄',
+  'useranduserregisteranduserregisterresult.login.tab-login-mobile': '手機號登錄',
+  'useranduserregisteranduserregisterresult.login.remember-me': '自動登錄',
+  'useranduserregisteranduserregisterresult.login.forgot-password': '忘記密碼',
+  'useranduserregisteranduserregisterresult.login.sign-in-with': '其他登錄方式',
+  'useranduserregisteranduserregisterresult.login.signup': '註冊賬戶',
+  'useranduserregisteranduserregisterresult.login.login': '登錄',
+  'useranduserregisteranduserregisterresult.register.register': '註冊',
+  'useranduserregisteranduserregisterresult.register.get-verification-code': '獲取驗證碼',
+  'useranduserregisteranduserregisterresult.register.sign-in': '使用已有賬戶登錄',
+  'useranduserregisteranduserregisterresult.register-result.msg': '妳的賬戶：{email} 註冊成功',
+  'useranduserregisteranduserregisterresult.register-result.activation-email':
+    '激活郵件已發送到妳的郵箱中，郵件有效期為24小時。請及時登錄郵箱，點擊郵件中的鏈接激活帳戶。',
+  'useranduserregisteranduserregisterresult.register-result.back-home': '返回首頁',
+  'useranduserregisteranduserregisterresult.register-result.view-mailbox': '查看郵箱',
+  'useranduserregisteranduserregisterresult.navBar.lang': '語言',
+};
