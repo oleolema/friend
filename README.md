@@ -7,10 +7,6 @@ source ./server/resources/create.sql
 
 2. 编译运行
 ```
-cd ./client
-npm install
-npm run build
-
 cd ../server
 mvn install
 mvn package
