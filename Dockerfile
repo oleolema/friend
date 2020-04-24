@@ -8,15 +8,16 @@ RUN mkdir -p $CODE \
 WORKDIR $CODE
 COPY ./ ./
 
+WORKDIR $CODE/server
 # mvn打包
 RUN chmod 777 ./server/mvnw
 RUN mvn install
 RUN mvn package
-RUN cp ./server/target/*.jar $WORK/work.jar
+RUN cp ./server/target/*.jar $WORK/app.jar
 
 WORKDIR $WORK
 
-CMD ["java","-jar","work.jar"]
+CMD ["java","-jar","app.jar"]
 
 
 
