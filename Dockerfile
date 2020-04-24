@@ -10,8 +10,9 @@ COPY . .
 
 # mvn打包
 RUN chmod 777 ./server/mvnw \
-  && ./server/mvnw package \
-  && cp ./server/target/*.jar $WORK/work.jar
+    && ./server/mvnw install \
+    && ./server/mvnw package \
+    && cp ./server/target/*.jar $WORK/work.jar
 
 WORKDIR $WORK
 
