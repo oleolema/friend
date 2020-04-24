@@ -10,10 +10,10 @@ COPY ./ ./
 
 WORKDIR $CODE/server
 # mvn打包
-RUN chmod 777 ./server/mvnw
+RUN chmod 777 ./mvnw
 RUN mvn install
 RUN mvn package
-RUN cp ./server/target/*.jar $WORK/app.jar
+RUN cp ./target/*.jar $WORK/app.jar
 
 WORKDIR $WORK
 
