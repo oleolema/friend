@@ -9,9 +9,9 @@ WORKDIR $CODE
 COPY . .
 
 # mvn打包
-RUN chmod 777 ./server/mvnw \
-    && ./server/mvnw install \
-    && ./server/mvnw package \
+RUN chmod 777 mvn \
+    && mvn install \
+    && mvn package \
     && cp ./server/target/*.jar $WORK/work.jar
 
 WORKDIR $WORK
