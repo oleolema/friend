@@ -17,6 +17,8 @@ RUN cp ./target/*.jar $WORK/app.jar
 
 WORKDIR $WORK
 
+EXPOSE 8080
+
 CMD ["java","-jar","app.jar"]
 
 
