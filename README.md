@@ -7,7 +7,7 @@ source ./server/resources/create.sql
 
 2. 编译运行
 ```
-cd ../server
+cd ./server
 mvn install
 mvn package
 java -jar ./target/friend-0.0.1.jar
