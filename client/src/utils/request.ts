@@ -63,8 +63,6 @@ export enum CodeMsg {
 const request = extend({
   errorHandler, // 默认错误处理
   credentials: 'include', // 默认请求是否带上cookie
-  // prefix: 'http://liuary.top:9090',
-  // prefix: 'http://localhost:8080',
 });
 
 
