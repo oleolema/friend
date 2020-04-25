@@ -12,11 +12,6 @@ export default {
       changeOrigin: true,
       pathRewrite: { '^': '' },
     },
-    '/friend': {
-      target: 'http://localhost:8000',
-      changeOrigin: true,
-      pathRewrite: { '^': '' },
-    },
   },
   test: {
     '/api/': {
