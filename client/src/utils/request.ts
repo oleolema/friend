@@ -3,7 +3,7 @@
  * 更详细的 api 文档: https://github.com/umijs/umi-request
  */
 import {extend, RequestOptionsInit, ResponseError} from 'umi-request';
-import {notification, message} from 'antd';
+import {notification} from 'antd';
 
 const codeMessage = {
   200: '服务器成功返回请求的数据。',
@@ -64,7 +64,7 @@ const request = extend({
   errorHandler, // 默认错误处理
   credentials: 'include', // 默认请求是否带上cookie
   // prefix: 'http://liuary.top:9090',
-  prefix: 'http://localhost:8080',
+  // prefix: 'http://localhost:8080',
 });
 
 
@@ -77,7 +77,7 @@ const interceptor = (url: string, options?: RequestOptionsInit) => {
       });
     }
     if (res.data !== CodeType.success) {
-      //打印通知
+      // 打印通知
 
       Promise.resolve(res);
     }
@@ -85,5 +85,5 @@ const interceptor = (url: string, options?: RequestOptionsInit) => {
   });
 }
 
-//拦截器
+// 拦截器
 export default interceptor;
