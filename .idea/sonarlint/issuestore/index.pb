@@ -31,3 +31,13 @@ Vserver/src/main/java/com/example/test1/demo/service/impl/AdministratorServiceIm
 Kserver/src/main/java/com/example/test1/demo/mapper/AdministratorMapper.java,c\9\c9111d96dac29b48a9a954716f31e116abd06bcb
 
 Oserver/src/main/java/com/example/test1/demo/service/impl/FriendServiceImpl.java,6\2\62c2a692d94af0debd1e8096b9569b3c336e944b
+K
+.github/workflows/maven.yml,c\7\c709f6995f23dae0da365bff70068f8288fa89e0
+A
+server/Dockerfile,7\6\7616e2c202d821cf272f76f16fc84f194a512f67
+F
+client/config/proxy.ts,2\e\2e55c284e9dcddfe18e958e74a34c7ee69c29465
+K
+client/src/utils/request.ts,8\a\8aace2ec5ace74d7db40aaea9fc5f1969e913a5c
+G
+client/config/config.ts,4\e\4efe8a73a24f8980770e1bce1d6b545179063287
