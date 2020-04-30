@@ -53,7 +53,7 @@ jobs:
             docker login --username=${{ secrets.USERNAME }} --password ${{ secrets.PASSWORD }} registry.cn-shanghai.aliyuncs.com
             docker pull ${{ secrets.REGISTRY }}:latest
             mkdir -p ./friend
-            docker run -d -p 8080:8080 --link mysql ${{ secrets.REGISTRY }}:latest
+            docker run -d -p 8080:8080 --link mysql:mysql.docker ${{ secrets.REGISTRY }}:latest
 # 上面暴露出了 8060端口, 填你项目端口即可 (没有端口可忽略)
 
 

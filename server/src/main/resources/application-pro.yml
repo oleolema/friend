@@ -2,6 +2,6 @@ spring:
   datasource:
     username: root
     password: friend
-    url: jdbc:mysql://mysql:3308/friend?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=true
+    url: jdbc:mysql://mysql.docker:3308/friend?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
 
