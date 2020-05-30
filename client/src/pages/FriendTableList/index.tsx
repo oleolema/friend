@@ -120,9 +120,8 @@ const TableList: React.FC<{}> = () => {
     {
       title: '序号',
       dataIndex: 'id',
-      hideInForm: true
-
-
+      hideInForm: true,
+      hideInSearch: true,
     },
     {
       title: '姓名',
@@ -133,6 +132,7 @@ const TableList: React.FC<{}> = () => {
           message: '姓名为必填项',
         },
       ],
+      hideInSearch: true,
     },
     {
       title: '性别',
@@ -141,6 +141,7 @@ const TableList: React.FC<{}> = () => {
         '0': '男',
         '1': '女',
       },
+      hideInSearch: true,
     },
     {
       title: '电话',
@@ -151,6 +152,7 @@ const TableList: React.FC<{}> = () => {
           pattern: /^\d{3,}$/,
         },
       ],
+      hideInSearch: true,
     },
     {
       title: 'QQ',
@@ -166,6 +168,7 @@ const TableList: React.FC<{}> = () => {
       title: '操作',
       dataIndex: 'option',
       valueType: 'option',
+      hideInSearch: true,
       render: (_, record: any) => (
         <>
           <Button
@@ -220,7 +223,6 @@ const TableList: React.FC<{}> = () => {
             setSorter(`${sorterResult.field}_${sorterResult.order}`);
           }
         }}
-        search={false}
         params={{
           sorter,
         }}

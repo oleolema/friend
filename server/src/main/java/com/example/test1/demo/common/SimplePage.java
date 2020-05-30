@@ -13,6 +13,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -34,6 +36,14 @@ public class SimplePage<T> {
     private long current;
 
     private long pageSize;
+
+    public static <T> SimplePage<T> create(T data) {
+        SimplePage<T> simplePage = new SimplePage<>();
+        simplePage.data = Collections.singletonList(data);
+        simplePage.total = 1;
+        simplePage.current = 1;
+        return simplePage;
+    }
 
     public SimplePage(IPage<T> iPage) {
         data = iPage.getRecords();

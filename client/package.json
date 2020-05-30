@@ -57,6 +57,7 @@
     "@types/md5": "^2.1.33",
     "antd": "^4.0.0",
     "classnames": "^2.2.6",
+    "dynamic-config-sdk": "^1.0.3",
     "express-session": "^1.17.0",
     "lodash": "^4.17.11",
     "md5": "^2.2.1",

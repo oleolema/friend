@@ -4,7 +4,7 @@ import {UserRegisterParams} from '@/pages/user/UserRegister';
 import md5 from 'md5';
 
 export async function register(params: UserRegisterParams) {
-  return request('/user/register', {
+  return request('/api/user/register', {
     method: 'POST',
     data: {
       ...params,

@@ -3,6 +3,7 @@ package com.example.test1.demo.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.example.test1.demo.bean.Friend;
+import com.example.test1.demo.bean.query.FriendQuery;
 import com.example.test1.demo.common.ResponseMessage;
 import com.example.test1.demo.common.SimplePage;
 import com.example.test1.demo.service.FriendService;
@@ -22,12 +23,20 @@ public class FriendController {
 
 
     @GetMapping("/query")
-    public ResponseMessage<SimplePage<Friend>> query(@RequestParam(value = "current", defaultValue = "0") int p, @RequestParam(value = "pageSize", defaultValue = "-1") int s) {
+    public ResponseMessage<SimplePage<Friend>> query(@RequestParam(value = "current", defaultValue = "0") int p,
+                                                     @RequestParam(value = "pageSize", defaultValue = "-1") int s,
+                                                     @RequestParam(value = "qq", required = false) String qq) {
         System.out.println(p + " " + s);
-        IPage<Friend> friendIPage = friendService.pageList(null, p, s);
+        QueryWrapper<Friend> queryWrapper = new QueryWrapper<>();
+        if (qq != null) {
+            queryWrapper.lambda().eq(Friend::getQq, qq);
+        }
+        IPage<Friend> friendIPage = friendService.pageList(queryWrapper, p, s);
+
         System.out.println(friendIPage);
         return ResponseMessage.successData(new SimplePage<>(friendIPage));
     }
+
 
     @PostMapping("/add")
     public ResponseMessage<Friend> query(@RequestBody Friend friend) {

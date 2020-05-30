@@ -11,4 +11,6 @@ public interface FriendService extends IService<Friend> {
      */
     IPage<Friend> pageList(QueryWrapper<Friend> wrapper, Integer pageNo, Integer pageSize);
 
+    Friend findByQQ(Integer qq);
+
 }
