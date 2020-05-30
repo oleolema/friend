@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @Slf4j
-@RequestMapping("/friend")
+@RequestMapping("/api/friend")
 public class FriendController {
 
     @Autowired

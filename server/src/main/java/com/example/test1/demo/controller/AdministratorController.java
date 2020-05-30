@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 
 @RestController
 @Slf4j
-@RequestMapping("/user")
+@RequestMapping("/api/user")
 public class AdministratorController {
 
     @Autowired
